@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Streamster';
-  src: url('./Streamster.ttf') format('truetype');
+  font-family: 'Audiowide';
+  src: url('./Audiowide-Regular.ttf') format('truetype');
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #0b0e11;
-  font-family: 'Streamster', 'Arial', sans-serif;
+  font-family: 'Audiowide', 'Arial', sans-serif;
 }
 
 .calculator {

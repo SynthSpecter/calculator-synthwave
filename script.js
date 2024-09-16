@@ -36,6 +36,31 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
+  document.addEventListener('keydown', handleKeyboardInput)
+
+  function handleKeyboardInput(event) {
+    const key = event.key
+
+    if (/^[0-9.]$/.test(key)) {
+      // Nombres et point décimal
+      handleNumber(key)
+    } else if (['+', '-', '*', '/'].includes(key)) {
+      // Opérateurs
+      handleOperator(key === '*' ? 'x' : key)
+    } else if (key === 'Enter' || key === '=') {
+      // Égal
+      calculate()
+    } else if (key === 'Backspace') {
+      // Retour arrière
+      handleBackspace()
+    } else if (key === 'Escape') {
+      // Effacer
+      clearAll()
+    }
+
+    updateDisplay()
+  }
+
   function handleNumber(value) {
     if (value === '.' && currentInput.includes('.')) return
     currentInput += value
