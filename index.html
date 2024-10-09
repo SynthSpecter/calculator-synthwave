@@ -9,35 +9,61 @@
 </head>
 
 <body>
-   <div class="calculator">
-      <div class="screen">
-         <div class="screenContent">
-            <p class="calculation" id="calculationText"></p>
-            <p class="result" id="resultText">0</p>
+   <main>
+      <!-- Calculator container -->
+      <!-- Conteneur de la calculatrice -->
+      <div class="calculator">
+         <!-- Display screen -->
+         <!-- Écran d'affichage -->
+         <div class="screen">
+            <div class="screenContent">
+               <!-- Calculation history -->
+               <!-- Historique des calculs -->
+               <p class="calculation" id="calculationText"></p>
+               <!-- Current result -->
+               <!-- Résultat actuel -->
+               <p class="result" id="resultText">0</p>
+            </div>
+         </div>
+         <!-- Button grid -->
+         <!-- Grille des boutons -->
+         <div class="buttons">
+            <!-- Clear button -->
+            <!-- Bouton d'effacement -->
+            <button class="btn operator" data-action="clear">C</button>
+            <!-- Backspace button -->
+            <!-- Bouton de retour arrière -->
+            <button class="btn operator" data-action="backspace">&lt;</button>
+            <!-- Operation buttons -->
+            <!-- Boutons d'opération -->
+            <button class="btn operator" data-action="divide">/</button>
+            <button class="btn operator" data-action="multiply">x</button>
+            <!-- Number buttons -->
+            <!-- Boutons numériques -->
+            <button class="btn" data-action="number">7</button>
+            <button class="btn" data-action="number">8</button>
+            <button class="btn" data-action="number">9</button>
+            <button class="btn operator" data-action="subtract">-</button>
+            <button class="btn" data-action="number">4</button>
+            <button class="btn" data-action="number">5</button>
+            <button class="btn" data-action="number">6</button>
+            <button class="btn operator" data-action="add">+</button>
+            <button class="btn" data-action="number">1</button>
+            <button class="btn" data-action="number">2</button>
+            <button class="btn" data-action="number">3</button>
+            <!-- Equals button -->
+            <!-- Bouton égal -->
+            <button class="btn operator" data-action="equals">=</button>
+            <button class="btn" data-action="number">0</button>
+            <!-- Decimal point button -->
+            <!-- Bouton point décimal -->
+            <button class="btn" data-action="decimal">.</button>
          </div>
       </div>
-      <div class="buttons">
-         <button class="btn operator" data-action="clear">C</button>
-         <button class="btn operator" data-action="backspace">&lt;</button>
-         <button class="btn operator" data-action="divide">/</button>
-         <button class="btn operator" data-action="multiply">x</button>
-         <button class="btn" data-action="number">7</button>
-         <button class="btn" data-action="number">8</button>
-         <button class="btn" data-action="number">9</button>
-         <button class="btn operator" data-action="subtract">-</button>
-         <button class="btn" data-action="number">4</button>
-         <button class="btn" data-action="number">5</button>
-         <button class="btn" data-action="number">6</button>
-         <button class="btn operator" data-action="add">+</button>
-         <button class="btn" data-action="number">1</button>
-         <button class="btn" data-action="number">2</button>
-         <button class="btn" data-action="number">3</button>
-         <button class="btn operator" data-action="equals">=</button>
-         <button class="btn" data-action="number">0</button>
-         <button class="btn" data-action="decimal">.</button>
-      </div>
-   </div>
-   <script src="script.js"></script>
+   </main>
+   <!-- Main JavaScript file -->
+   <!-- Fichier JavaScript principal -->
+   <script src="./scripts/calculator.js" type="module"></script>
 </body>
 
 </html>
