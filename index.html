@@ -2,67 +2,168 @@
 <html lang="fr">
 
 <head>
+   <!-- Define the character set and viewport for responsive design -->
+   <!-- Définir le jeu de caractères et la fenêtre d'affichage pour un design réactif -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Link to Font Awesome for icons -->
+   <!-- Lien vers Font Awesome pour les icônes -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <!-- Link to the custom stylesheet -->
+   <!-- Lien vers la feuille de style personnalisée -->
    <link rel="stylesheet" href="styles.css">
-   <title>Calculatrice Synthwave</title>
+
+   <!-- Title of the webpage -->
+   <!-- Titre de la page web -->
+   <title>Calculatrice Synthwave | Synthwave Calculator</title>
 </head>
 
 <body>
-   <main>
-      <!-- Calculator container -->
-      <!-- Conteneur de la calculatrice -->
-      <div class="calculator">
-         <!-- Display screen -->
-         <!-- Écran d'affichage -->
-         <div class="screen">
-            <div class="screenContent">
-               <!-- Calculation history -->
-               <!-- Historique des calculs -->
-               <p class="calculation" id="calculationText"></p>
-               <!-- Current result -->
-               <!-- Résultat actuel -->
-               <p class="result" id="resultText">0</p>
-            </div>
-         </div>
-         <!-- Button grid -->
-         <!-- Grille des boutons -->
-         <div class="buttons">
-            <!-- Clear button -->
-            <!-- Bouton d'effacement -->
-            <button class="btn operator" data-action="clear">C</button>
-            <!-- Backspace button -->
-            <!-- Bouton de retour arrière -->
-            <button class="btn operator" data-action="backspace">&lt;</button>
-            <!-- Operation buttons -->
-            <!-- Boutons d'opération -->
-            <button class="btn operator" data-action="divide">/</button>
-            <button class="btn operator" data-action="multiply">x</button>
-            <!-- Number buttons -->
-            <!-- Boutons numériques -->
-            <button class="btn" data-action="number">7</button>
-            <button class="btn" data-action="number">8</button>
-            <button class="btn" data-action="number">9</button>
-            <button class="btn operator" data-action="subtract">-</button>
-            <button class="btn" data-action="number">4</button>
-            <button class="btn" data-action="number">5</button>
-            <button class="btn" data-action="number">6</button>
-            <button class="btn operator" data-action="add">+</button>
-            <button class="btn" data-action="number">1</button>
-            <button class="btn" data-action="number">2</button>
-            <button class="btn" data-action="number">3</button>
-            <!-- Equals button -->
-            <!-- Bouton égal -->
-            <button class="btn operator" data-action="equals">=</button>
-            <button class="btn" data-action="number">0</button>
-            <!-- Decimal point button -->
-            <!-- Bouton point décimal -->
-            <button class="btn" data-action="decimal">.</button>
+   <!-- Main container for the calculator and side menus -->
+   <!-- Conteneur principal pour la calculatrice et les menus latéraux -->
+   <div class="calculator-container">
+      <!-- Left side menu for unit conversion -->
+      <!-- Menu latéral gauche pour la conversion d'unités -->
+      <div class="side-menu left-menu" id="unitConverter">
+         <h3>Convertisseur d'Unités | Unit Converter</h3>
+         <!-- Unit converter form -->
+         <!-- Formulaire de conversion d'unités -->
+         <div class="unit-converter">
+            <!-- Input field for the value to convert -->
+            <!-- Champ de saisie pour la valeur à convertir -->
+            <input type="number" id="unitInput" placeholder="Valeur | Value">
+
+            <!-- Dropdown to select the unit to convert from -->
+            <!-- Menu déroulant pour sélectionner l'unité à convertir -->
+            <select id="unitFrom">
+               <option value="meters">Mètres | Meters</option>
+               <option value="feet">Pieds | Feet</option>
+            </select>
+
+            <span>à | to</span>
+
+            <!-- Dropdown to select the unit to convert to -->
+            <!-- Menu déroulant pour sélectionner l'unité vers laquelle convertir -->
+            <select id="unitTo">
+               <option value="feet">Pieds | Feet</option>
+               <option value="meters">Mètres | Meters</option>
+            </select>
+
+            <!-- Button to perform the conversion -->
+            <!-- Bouton pour effectuer la conversion -->
+            <button onclick="convertUnits()">
+               <i class="fas fa-exchange-alt"></i> Convertir | Convert
+            </button>
+
+            <!-- Paragraph to display the conversion result -->
+            <!-- Paragraphe pour afficher le résultat de la conversion -->
+            <p id="conversionResult"></p>
          </div>
       </div>
-   </main>
-   <!-- Main JavaScript file -->
-   <!-- Fichier JavaScript principal -->
+
+      <!-- Main content area -->
+      <!-- Zone de contenu principal -->
+      <main>
+         <!-- Calculator interface -->
+         <!-- Interface de la calculatrice -->
+         <div class="calculator">
+            <!-- Button to open the unit converter sidebar -->
+            <!-- Bouton pour ouvrir le menu latéral du convertisseur d'unités -->
+            <button class="menu-btn left-btn" id="openConverter">
+               <i class="fas fa-ruler"></i>
+            </button>
+
+            <!-- Calculator screen to display current input and calculation -->
+            <!-- Écran de la calculatrice pour afficher l'entrée actuelle et le calcul -->
+            <div class="screen">
+               <div class="screenContent">
+                  <!-- Display the current calculation -->
+                  <!-- Afficher le calcul actuel -->
+                  <p class="calculation" id="calculationText"></p>
+
+                  <!-- Display the current result -->
+                  <!-- Afficher le résultat actuel -->
+                  <p class="result" id="resultText">0</p>
+               </div>
+            </div>
+
+            <!-- Calculator buttons -->
+            <!-- Boutons de la calculatrice -->
+            <div class="buttons">
+               <!-- Clear button -->
+               <!-- Bouton d'effacement -->
+               <button class="btn operator" data-action="clear">C</button>
+
+               <!-- Backspace button -->
+               <!-- Bouton de retour arrière -->
+               <button class="btn operator" data-action="backspace">&lt;</button>
+
+               <!-- Division button -->
+               <!-- Bouton de division -->
+               <button class="btn operator" data-action="divide">/</button>
+
+               <!-- Multiplication button -->
+               <!-- Bouton de multiplication -->
+               <button class="btn operator" data-action="multiply">x</button>
+
+               <!-- Number buttons -->
+               <!-- Boutons numériques -->
+               <button class="btn" data-action="number">7</button>
+               <button class="btn" data-action="number">8</button>
+               <button class="btn" data-action="number">9</button>
+
+               <!-- Subtraction button -->
+               <!-- Bouton de soustraction -->
+               <button class="btn operator" data-action="subtract">-</button>
+
+               <button class="btn" data-action="number">4</button>
+               <button class="btn" data-action="number">5</button>
+               <button class="btn" data-action="number">6</button>
+
+               <!-- Addition button -->
+               <!-- Bouton d'addition -->
+               <button class="btn operator" data-action="add">+</button>
+
+               <button class="btn" data-action="number">1</button>
+               <button class="btn" data-action="number">2</button>
+               <button class="btn" data-action="number">3</button>
+
+               <!-- Equals button -->
+               <!-- Bouton égal -->
+               <button class="btn operator" data-action="equals">=</button>
+
+               <button class="btn" data-action="number">0</button>
+
+               <!-- Decimal point button -->
+               <!-- Bouton point décimal -->
+               <button class="btn" data-action="decimal">.</button>
+            </div>
+
+            <!-- Button to open the calculation history sidebar -->
+            <!-- Bouton pour ouvrir le menu latéral de l'historique des calculs -->
+            <button class="menu-btn right-btn" id="openHistory">
+               <i class="fas fa-history"></i>
+            </button>
+         </div>
+      </main>
+
+      <!-- Right side menu for calculation history -->
+      <!-- Menu latéral droit pour l'historique des calculs -->
+      <div class="side-menu right-menu" id="calculationHistory">
+         <h3>Historique des Calculs | Calculation History</h3>
+         <!-- List to display the history of calculations -->
+         <!-- Liste pour afficher l'historique des calculs -->
+         <ul id="historyList">
+            <!-- Calculations will be dynamically added here -->
+            <!-- Les calculs seront ajoutés ici dynamiquement -->
+         </ul>
+      </div>
+   </div>
+
+   <!-- Link to the main JavaScript file -->
+   <!-- Lien vers le fichier JavaScript principal -->
    <script src="./scripts/calculator.js" type="module"></script>
 </body>
 

@@ -1,10 +1,20 @@
+/* Define CSS variables for consistent theming across the application */
+/* Définir des variables CSS pour un thème cohérent dans toute l'application */
 :root {
-  --bg-color: #0b0e11;
-  --calculator-bg: #1a1c23;
-  --button-bg: #2c2f3a;
-  --operator-bg: #3d4153;
-  --text-color: #ffffff;
-  --accent-color: #ff6ec7;
+  --bg-color: #1e1e2e; /* Background color for the body */
+  /* Couleur de fond pour le corps */
+  --calculator-bg: #282c33; /* Background color for the calculator */
+  /* Couleur de fond pour la calculatrice */
+  --button-bg: #3e4451; /* Background color for buttons */
+  /* Couleur de fond pour les boutons */
+  --operator-bg: #56647d; /* Background color for operator buttons */
+  /* Couleur de fond pour les boutons opérateurs */
+  --text-color: #ffffff; /* Default text color */
+  /* Couleur de texte par défaut */
+  --accent-color: #ff6ac1; /* Accent color for highlights and buttons */
+  /* Couleur d'accentuation pour les surbrillances et les boutons */
+  --secondary-accent-color: #8a2be2; /* Secondary accent color */
+  /* Couleur d'accentuation secondaire */
 }
 
 /* Custom font import */
@@ -14,8 +24,8 @@
   src: url('./Audiowide-Regular.ttf') format('truetype');
 }
 
-/* Global styles */
-/* Styles globaux */
+/* General body styles */
+/* Styles généraux du corps */
 body {
   margin: 0;
   padding: 0;
@@ -27,18 +37,56 @@ body {
   font-family: 'Audiowide', 'Arial', sans-serif;
 }
 
-/* Calculator container */
-/* Conteneur de la calculatrice */
+/* Calculator container styles */
+/* Styles du conteneur de la calculatrice */
+.calculator-container {
+  position: relative;
+  width: 300px;
+}
+
+/* Calculator styles */
+/* Styles de la calculatrice */
 .calculator {
   background-color: var(--calculator-bg);
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(255, 110, 199, 0.5);
   overflow: hidden;
-  width: 300px;
+  width: 100%;
 }
 
-/* Screen styles */
-/* Styles de l'écran */
+/* Menu button styles */
+/* Styles des boutons de menu */
+.menu-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Positioning for the left menu button */
+/* Positionnement pour le bouton de menu de gauche */
+.left-btn {
+  left: -20px;
+}
+
+/* Positioning for the right menu button */
+/* Positionnement pour le bouton de menu de droite */
+.right-btn {
+  right: -20px;
+}
+
+/* Calculator screen styles */
+/* Styles de l'écran de la calculatrice */
 .screen {
   height: 150px;
   background-color: var(--bg-color);
@@ -46,8 +94,19 @@ body {
   text-align: right;
   padding: 10px;
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(255, 106, 193, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Active state for the screen */
+/* État actif pour l'écran */
+.screen:active {
+  opacity: 0.8;
+  transform: translateY(2px);
+}
+
+/* Screen content layout */
+/* Disposition du contenu de l'écran */
 .screenContent {
   display: flex;
   flex-direction: column;
@@ -55,6 +114,8 @@ body {
   height: 100%;
 }
 
+/* Calculation text styles */
+/* Styles du texte de calcul */
 .calculation {
   font-size: 16px;
   color: var(--text-color);
@@ -64,23 +125,26 @@ body {
   white-space: nowrap;
 }
 
+/* Result text styles */
+/* Styles du texte de résultat */
 .result {
   font-size: 40px;
   margin: 10px 0 0;
   color: var(--text-color);
+  font-weight: bold;
 }
 
-/* Button grid */
-/* Grille des boutons */
+/* Calculator buttons grid layout */
+/* Disposition en grille des boutons de la calculatrice */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 8px;
   padding: 10px;
 }
 
-/* Button styles */
-/* Styles des boutons */
+/* General button styles */
+/* Styles généraux des boutons */
 .btn {
   padding: 15px;
   font-size: 20px;
@@ -89,24 +153,181 @@ body {
   color: var(--text-color);
   background-color: var(--button-bg);
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Button hover state */
+/* État de survol des boutons */
 .btn:hover {
   background-color: var(--accent-color);
   color: var(--button-bg);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3), 0 0 10px var(--accent-color);
 }
 
-.operator {
-  background-color: var(--operator-bg);
+/* Button active state */
+/* État actif des boutons */
+.btn:active {
+  transform: scale(0.95);
 }
 
-/* Special button layouts */
-/* Dispositions spéciales des boutons */
+/* Operator button hover state */
+/* État de survol des boutons opérateurs */
+.operator:hover {
+  background-color: var(--secondary-accent-color);
+  color: var(--button-bg);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3),
+    0 0 10px var(--secondary-accent-color);
+}
+
+/* Equals button layout */
+/* Disposition du bouton égal */
 .btn[data-action='equals'] {
   grid-row: span 2;
 }
 
+/* Zero button layout */
+/* Disposition du bouton zéro */
 .btn[data-action='number'][value='0'] {
   grid-column: span 2;
+}
+
+/* Side menu styles */
+/* Styles des menus latéraux */
+.side-menu {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: var(--calculator-bg);
+  color: var(--text-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+/* Positioning for the left side menu */
+/* Positionnement pour le menu latéral gauche */
+.left-menu {
+  left: -220px;
+}
+
+/* Positioning for the right side menu */
+/* Positionnement pour le menu latéral droit */
+.right-menu {
+  right: -220px;
+}
+
+/* Animation for opening the left side menu */
+/* Animation pour l'ouverture du menu latéral gauche */
+.left-menu.open {
+  animation: slideInLeft 0.5s forwards;
+}
+
+/* Animation for opening the right side menu */
+/* Animation pour l'ouverture du menu latéral droit */
+.right-menu.open {
+  animation: slideInRight 0.5s forwards;
+}
+
+/* Animation for closing the left side menu */
+/* Animation pour la fermeture du menu latéral gauche */
+.left-menu.closing {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+/* Animation for closing the right side menu */
+/* Animation pour la fermeture du menu latéral droit */
+.right-menu.closing {
+  animation: slideOutRight 0.5s forwards;
+}
+
+/* Keyframes for sliding in the left menu */
+/* Images clés pour l'animation d'ouverture du menu gauche */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for sliding out the left menu */
+/* Images clés pour l'animation de fermeture du menu gauche */
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+/* Keyframes for sliding in the right menu */
+/* Images clés pour l'animation d'ouverture du menu droit */
+@keyframes slideInRight {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for sliding out the right menu */
+/* Images clés pour l'animation de fermeture du menu droit */
+@keyframes slideOutRight {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+/* Unit converter form styles */
+/* Styles du formulaire de conversion d'unités */
+.unit-converter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styles for input, select, and button elements within the unit converter */
+/* Styles pour les éléments input, select et button dans le convertisseur d'unités */
+.unit-converter input,
+.unit-converter select,
+.unit-converter button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Unit converter button styles */
+/* Styles des boutons du convertisseur d'unités */
+.unit-converter button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Unit converter button hover state */
+/* État de survol des boutons du convertisseur d'unités */
+.unit-converter button:hover {
+  background-color: var(--secondary-accent-color);
 }
