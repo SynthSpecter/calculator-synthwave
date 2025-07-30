@@ -1,74 +1,82 @@
 # Calculatrice Synthwave | Synthwave Calculator
 
-Une calculatrice stylisée avec un thème synthwave, incluant un convertisseur d'unités et un historique des calculs, tu vas adorer !
-| A stylish calculator with a synthwave theme, including a unit converter and calculation history, you're gonna love it!
+Une calculatrice stylisée avec un thème synthwave, incluant un convertisseur d'unités et un historique des calculs.
+| A stylish calculator with a synthwave theme, including a unit converter and calculation history.
 
 ## Description | Description
 
-La Calculatrice Synthwave, c'est une application web qui te fait voyager dans le temps avec son design rétro inspiré du style synthwave. En plus de ça, elle a des fonctionnalités trop cool comme un convertisseur d'unités et un historique des calculs pour une utilisation pratique et esthétique, tu vois ?
-| The Synthwave Calculator, it's a web application that takes you on a time travel with its retro design inspired by the synthwave style. Plus, it has super cool features like a unit converter and a calculation history for practical and aesthetic use, you see?
+La Calculatrice Synthwave est une application web conçue pour offrir une expérience utilisateur immersive avec son design rétro inspiré du style synthwave. Elle intègre des fonctionnalités avancées telles qu'un convertisseur d'unités et un historique des calculs, alliant esthétique et praticité.
+| The Synthwave Calculator is a web application designed to offer an immersive user experience with its retro design inspired by the synthwave style. It integrates advanced features such as a unit converter and a calculation history, combining aesthetics and practicality.
 
 ## Fonctionnalités | Features
 
-- **Calculatrice Basique | Basic Calculator**: Elle fait des opérations arithmétiques de base, c'est trop simple !
- | It performs basic arithmetic operations, it's super simple!
+- **Calculatrice Basique | Basic Calculator**: Permet d'effectuer les opérations arithmétiques fondamentales.
+ | Performs basic arithmetic operations.
 
-- **Convertisseur d'Unités | Unit Converter**: Convertit entre différentes unités de mesure, c'est hyper pratique !
- | Converts between different units of measurement, it's hyper practical!
+- **Convertisseur d'Unités | Unit Converter**: Offre la possibilité de convertir entre différentes unités de mesure.
+ | Provides the ability to convert between different units of measurement.
 
-- **Historique des Calculs | Calculation History**: Garde une trace des calculs précédents, comme ça tu peux t'y retrouver !
- | Keeps track of previous calculations, so you can find your way around!
+- **Historique des Calculs | Calculation History**: Conserve un enregistrement des calculs précédents pour une consultation aisée.
+ | Keeps a record of previous calculations for easy consultation.
 
-- **Design Synthwave | Synthwave Design**: Une interface utilisateur avec un thème visuel synthwave, c'est trop stylé !
- | A user interface with a synthwave visual theme, it's super stylish!
+- **Design Synthwave | Synthwave Design**: Dispose d'une interface utilisateur avec un thème visuel synthwave, offrant une expérience esthétique unique.
+ | Has a user interface with a synthwave visual theme, offering a unique aesthetic experience.
 
 ## Installation | Installation
 
-Pour exécuter ce projet localement, suis ces étapes, c'est facile :
+Pour exécuter ce projet localement, veuillez suivre les étapes suivantes :
 
-1. Clone le dépôt sur ta machine locale, tu peux le faire comme ça :
-| To run this project locally, follow these steps, it's easy:
+1.  Clonez le dépôt sur votre machine locale en utilisant la commande suivante :
+    | Clone the repository to your local machine using the following command:
 
-   ```bash
-   git clone https://github.com/synthspecter/calculatrice-synthwave.git
-   
-2. Ouvre le fichier index.html dans ton navigateur préféré, et voilà !
-| Open the index.html file in your favorite browser, and there you go!
+    ```bash
+    git clone https://github.com/synthspecter/calculatrice-synthwave.git
+    ```
+
+2.  Ouvrez le fichier `index.html` dans votre navigateur web préféré.
+    | Open the `index.html` file in your favorite web browser.
 
 ## Utilisation | Usage
 
-Calculatrice | Calculator: Utilise les boutons de la calculatrice pour effectuer des calculs, c'est intuitif ! 
-| Use the calculator buttons to perform calculations, it's intuitive!
+Calculatrice | Calculator: Utilisez les boutons de la calculatrice pour effectuer vos calculs.
+| Use the calculator buttons to perform your calculations.
 
-Convertisseur d'Unités | Unit Converter: Ouvre le panneau latéral gauche pour convertir des unités, tu vas voir c'est simple ! 
-| Open the left sidebar panel to convert units, you'll see it's simple!
+Convertisseur d'Unités | Unit Converter: Accédez au panneau latéral gauche pour utiliser le convertisseur d'unités.
+| Access the left sidebar panel to use the unit converter.
 
-Historique | History: Consulte l'historique des calculs dans le panneau latéral droit, c'est trop utile ! 
-| Check out the history of calculations in the right sidebar panel, it's super useful!
+Historique | History: Consultez l'historique des calculs dans le panneau latéral droit.
+| View the calculation history in the right sidebar panel.
 
 ## Contribution | Contributing
 
-Les contributions sont les bienvenues, tu veux aider ? Voici comment tu peux contribuer, c'est super :
+Les contributions à ce projet sont les bienvenues. Pour contribuer, veuillez suivre les étapes suivantes :
 
-Fork le projet, tu peux le faire, allez !
-| Contributions are welcome, you wanna help? Here's how you can contribute, it's great:
+1.  Forkez le projet.
+    | Fork the project.
 
-Crée une branche pour ta fonctionnalité, comme ça : git checkout -b feature/AmazingFeature.
-| Create a branch for your feature, like this: git checkout -b feature/AmazingFeature.
+2.  Créez une branche pour votre fonctionnalité : `git checkout -b feature/VotreFonctionnalité`.
+    | Create a branch for your feature: `git checkout -b feature/YourFeature`.
 
-Commit tes modifications, tu peux faire comme ça : git commit -m 'Add some AmazingFeature'.
-| Commit your changes, you can do it like this: git commit -m 'Add some AmazingFeature'.
+3.  Commitez vos modifications : `git commit -m 'Ajout de VotreFonctionnalité'`.
+    | Commit your changes: `git commit -m 'Add YourFeature'`.
 
-Push vers la branche, allez : git push origin feature/AmazingFeature.
-| Push to the branch, go on: git push origin feature/AmazingFeature.
+4.  Pushez vers la branche : `git push origin feature/VotreFonctionnalité`.
+    | Push to the branch: `git push origin feature/YourFeature`.
 
-Ouvre une Pull Request, et c'est parti !
-| Open a Pull Request, and off you go!
+5.  Ouvrez une Pull Request.
+    | Open a Pull Request.
 
-Contact | Contact
-Pour toute question ou commentaire, n'hésite pas à me contacter à kev.tl63@gmail.com, je suis là !
-| For any questions or comments, feel free to contact me at kev.tl63@gmail.com, I'm here!
+## Remarques | Notes
 
-Remerciements | Acknowledgments
-Merci à tous ceux qui ont inspiré ce projet ou contribué de quelque manière que ce soit, vous êtes géniaux !
-| Thanks to everyone who inspired this project or contributed in any way, you're awesome!
+Ce projet a été développé avec l'assistance d'une intelligence artificielle (IA). Bien que le code ait été optimisé, il est possible qu'il contienne des éléments perfectibles. Toute suggestion d'amélioration est la bienvenue.
+| This project was developed with the assistance of an artificial intelligence (AI). Although the code has been optimized, it may contain elements that can be improved. Any suggestions for improvement are welcome.
+
+## Contact | Contact
+
+Pour toute question ou commentaire, n'hésitez pas à me contacter à l'adresse suivante : kev.tl63@gmail.com.
+| For any questions or comments, feel free to contact me at the following address: kev.tl63@gmail.com.
+
+## Remerciements | Acknowledgments
+
+Un grand merci à toutes les personnes qui ont inspiré ce projet ou qui y ont contribué.
+| A big thank you to all the people who inspired this project or contributed to it.
