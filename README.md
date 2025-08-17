@@ -1,82 +1,68 @@
-# Calculatrice Synthwave | Synthwave Calculator
+# SynthCalc 🧮
 
-Une calculatrice stylisée avec un thème synthwave, incluant un convertisseur d'unités et un historique des calculs.
-| A stylish calculator with a synthwave theme, including a unit converter and calculation history.
+Une calculatrice web simple et pratique | A simple and practical web calculator
 
-## Description | Description
+---
 
-La Calculatrice Synthwave est une application web conçue pour offrir une expérience utilisateur immersive avec son design rétro inspiré du style synthwave. Elle intègre des fonctionnalités avancées telles qu'un convertisseur d'unités et un historique des calculs, alliant esthétique et praticité.
-| The Synthwave Calculator is a web application designed to offer an immersive user experience with its retro design inspired by the synthwave style. It integrates advanced features such as a unit converter and a calculation history, combining aesthetics and practicality.
+## À propos | About
+
+SynthCalc est une calculatrice web permettant d'effectuer des calculs simples et avancés directement dans le navigateur.  
+| SynthCalc is a web calculator that allows performing simple and advanced calculations directly in the browser.
+
+---
 
 ## Fonctionnalités | Features
 
-- **Calculatrice Basique | Basic Calculator**: Permet d'effectuer les opérations arithmétiques fondamentales.
- | Performs basic arithmetic operations.
+- 🔢 Calculs de base | Basic operations  
+- ➗ Opérations avancées (puissances, racines) | Advanced operations (powers, roots)  
+- 🧮 Historique des calculs | Calculation history  
+- 📱 Interface claire et responsive | Clean and responsive interface  
 
-- **Convertisseur d'Unités | Unit Converter**: Offre la possibilité de convertir entre différentes unités de mesure.
- | Provides the ability to convert between different units of measurement.
-
-- **Historique des Calculs | Calculation History**: Conserve un enregistrement des calculs précédents pour une consultation aisée.
- | Keeps a record of previous calculations for easy consultation.
-
-- **Design Synthwave | Synthwave Design**: Dispose d'une interface utilisateur avec un thème visuel synthwave, offrant une expérience esthétique unique.
- | Has a user interface with a synthwave visual theme, offering a unique aesthetic experience.
+---
 
 ## Installation | Installation
 
-Pour exécuter ce projet localement, veuillez suivre les étapes suivantes :
+1. Clonez ce dépôt ou téléchargez les fichiers  
+   | Clone this repository or download the files  
+2. Ouvrez simplement `index.html` dans votre navigateur préféré  
+   | Simply open `index.html` in your preferred browser  
 
-1.  Clonez le dépôt sur votre machine locale en utilisant la commande suivante :
-    | Clone the repository to your local machine using the following command:
+---
 
-    ```bash
-    git clone https://github.com/synthspecter/calculatrice-synthwave.git
-    ```
+## Contribuer | Contribute
 
-2.  Ouvrez le fichier `index.html` dans votre navigateur web préféré.
-    | Open the `index.html` file in your favorite web browser.
+Ce projet est ouvert aux contributions. Voici quelques pistes d'amélioration :  
+| This project is open to contributions. Here are some improvement ideas:  
 
-## Utilisation | Usage
+- Améliorer la gestion de l’historique | Improve history management  
+- Ajouter un mode scientifique complet | Add a full scientific mode  
+- Intégrer des raccourcis clavier | Integrate keyboard shortcuts  
+- Améliorer l’accessibilité | Improve accessibility  
 
-Calculatrice | Calculator: Utilisez les boutons de la calculatrice pour effectuer vos calculs.
-| Use the calculator buttons to perform your calculations.
+Pour contribuer | To contribute:  
 
-Convertisseur d'Unités | Unit Converter: Accédez au panneau latéral gauche pour utiliser le convertisseur d'unités.
-| Access the left sidebar panel to use the unit converter.
+1. Forkez le projet | Fork the project  
+2. Créez une branche (git checkout -b ma-fonctionnalite) | Create a branch (git checkout -b my-feature)  
+3. Commitez vos changements (git commit -am "Ajout d'une fonctionnalité") | Commit your changes (git commit -am "Added a feature")  
+4. Pushez la branche (git push origin ma-fonctionnalite) | Push the branch (git push origin my-feature)  
+5. Ouvrez une Pull Request | Open a Pull Request  
 
-Historique | History: Consultez l'historique des calculs dans le panneau latéral droit.
-| View the calculation history in the right sidebar panel.
-
-## Contribution | Contributing
-
-Les contributions à ce projet sont les bienvenues. Pour contribuer, veuillez suivre les étapes suivantes :
-
-1.  Forkez le projet.
-    | Fork the project.
-
-2.  Créez une branche pour votre fonctionnalité : `git checkout -b feature/VotreFonctionnalité`.
-    | Create a branch for your feature: `git checkout -b feature/YourFeature`.
-
-3.  Commitez vos modifications : `git commit -m 'Ajout de VotreFonctionnalité'`.
-    | Commit your changes: `git commit -m 'Add YourFeature'`.
-
-4.  Pushez vers la branche : `git push origin feature/VotreFonctionnalité`.
-    | Push to the branch: `git push origin feature/YourFeature`.
-
-5.  Ouvrez une Pull Request.
-    | Open a Pull Request.
+---
 
 ## Remarques | Notes
 
-Ce projet a été développé avec l'assistance d'une intelligence artificielle (IA). Bien que le code ait été optimisé, il est possible qu'il contienne des éléments perfectibles. Toute suggestion d'amélioration est la bienvenue.
-| This project was developed with the assistance of an artificial intelligence (AI). Although the code has been optimized, it may contain elements that can be improved. Any suggestions for improvement are welcome.
+Ce projet a été développé avec l’assistance d’un système d’IA. Le code est fonctionnel mais reste perfectible et pourrait être amélioré pour atteindre une qualité de production.  
+| This project was developed with the assistance of an AI system. The code works but could be improved to reach production quality.  
 
-## Contact | Contact
+---
 
-Pour toute question ou commentaire, n'hésitez pas à me contacter à l'adresse suivante : kev.tl63@gmail.com.
-| For any questions or comments, feel free to contact me at the following address: kev.tl63@gmail.com.
+## Contact
+
+Auteur : Kévin T.L.  
+📧 Email : kev.tl63@gmail.com
+---
 
 ## Remerciements | Acknowledgments
 
-Un grand merci à toutes les personnes qui ont inspiré ce projet ou qui y ont contribué.
-| A big thank you to all the people who inspired this project or contributed to it.
+Merci à l’assistant IA pour son aide, et aux futurs développeurs qui amélioreront ce projet 🧮.  
+| Thanks to the AI assistant for its help, and to future developers who will enhance this project 🧮.  
