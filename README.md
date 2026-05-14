@@ -1,74 +1,130 @@
-# Calculatrice Synthwave | Synthwave Calculator
+# **Calculator Synthwave 🖩**
 
-Une calculatrice stylisée avec un thème synthwave, incluant un convertisseur d'unités et un historique des calculs, tu vas adorer !
-| A stylish calculator with a synthwave theme, including a unit converter and calculation history, you're gonna love it!
+**Une calculatrice rétro avec style synthwave et historique des calculs**
+**A retro calculator with synthwave style and calculation history**
 
-## Description | Description
+---
 
-La Calculatrice Synthwave, c'est une application web qui te fait voyager dans le temps avec son design rétro inspiré du style synthwave. En plus de ça, elle a des fonctionnalités trop cool comme un convertisseur d'unités et un historique des calculs pour une utilisation pratique et esthétique, tu vois ?
-| The Synthwave Calculator, it's a web application that takes you on a time travel with its retro design inspired by the synthwave style. Plus, it has super cool features like a unit converter and a calculation history for practical and aesthetic use, you see?
+## **📌 À propos / About**
 
-## Fonctionnalités | Features
+### **Français**
 
-- **Calculatrice Basique | Basic Calculator**: Elle fait des opérations arithmétiques de base, c'est trop simple !
- | It performs basic arithmetic operations, it's super simple!
+**Calculator Synthwave** est une **calculatrice rétro** développée en **HTML5, CSS et JavaScript**, avec :
 
-- **Convertisseur d'Unités | Unit Converter**: Convertit entre différentes unités de mesure, c'est hyper pratique !
- | Converts between different units of measurement, it's hyper practical!
+- Un **design synthwave** (couleurs néon, polices rétro).
+- Un **historique des calculs** (sauvegardé dans `localStorage`).
+- Un **mode sombre/clair** pour s'adapter à vos préférences.
+- Des **raccourcis clavier** pour une utilisation rapide.
 
-- **Historique des Calculs | Calculation History**: Garde une trace des calculs précédents, comme ça tu peux t'y retrouver !
- | Keeps track of previous calculations, so you can find your way around!
+### **English**
 
-- **Design Synthwave | Synthwave Design**: Une interface utilisateur avec un thème visuel synthwave, c'est trop stylé !
- | A user interface with a synthwave visual theme, it's super stylish!
+**Calculator Synthwave** is a **retro calculator** developed in **HTML5, CSS, and JavaScript**, featuring:
 
-## Installation | Installation
+- A **synthwave design** (neon colors, retro fonts).
+- A **calculation history** (saved in `localStorage`).
+- A **dark/light mode** to suit your preferences.
+- **Keyboard shortcuts** for quick use.
 
-Pour exécuter ce projet localement, suis ces étapes, c'est facile :
+---
 
-1. Clone le dépôt sur ta machine locale, tu peux le faire comme ça :
-| To run this project locally, follow these steps, it's easy:
+## **✨ Fonctionnalités / Features**
 
-   ```bash
-   git clone https://github.com/synthspecter/calculatrice-synthwave.git
-   
-2. Ouvre le fichier index.html dans ton navigateur préféré, et voilà !
-| Open the index.html file in your favorite browser, and there you go!
+| Fonctionnalité            | Feature                                                                           |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| ✅ **Calculs de base**    | Addition, soustraction, multiplication, division. / Basic operations: +, -, ×, ÷. |
+| ✅ **Historique**         | Sauvegarde des 10 derniers calculs. / Saves the last 10 calculations.             |
+| ✅ **Thème sombre/clair** | Basculez entre les deux modes. / Toggle between dark and light modes.             |
+| ✅ **Raccourcis clavier** | Utilisez votre clavier pour calculer. / Use your keyboard to calculate.           |
+| ✅ **Design rétro**       | Style synthwave avec couleurs néon. / Retro synthwave style with neon colors.     |
 
-## Utilisation | Usage
+---
 
-Calculatrice | Calculator: Utilise les boutons de la calculatrice pour effectuer des calculs, c'est intuitif ! 
-| Use the calculator buttons to perform calculations, it's intuitive!
+## **🖩 Raccourcis clavier / Keyboard Shortcuts**
 
-Convertisseur d'Unités | Unit Converter: Ouvre le panneau latéral gauche pour convertir des unités, tu vas voir c'est simple ! 
-| Open the left sidebar panel to convert units, you'll see it's simple!
+| Touche / Key | Action                                                |
+| ------------ | ----------------------------------------------------- |
+| 0-9          | Ajoute un chiffre / Add a digit                       |
+| .            | Ajoute un point décimal / Add a decimal point         |
+| +, -, \*, /  | Opérations / Operations                               |
+| Enter, =     | Calcule / Calculate                                   |
+| Escape       | Efface tout / Clear all                               |
+| Backspace    | Supprime le dernier caractère / Delete last character |
 
-Historique | History: Consulte l'historique des calculs dans le panneau latéral droit, c'est trop utile ! 
-| Check out the history of calculations in the right sidebar panel, it's super useful!
+---
 
-## Contribution | Contributing
+## **🛠 Installation / Installation**
 
-Les contributions sont les bienvenues, tu veux aider ? Voici comment tu peux contribuer, c'est super :
+### **Français**
 
-Fork le projet, tu peux le faire, allez !
-| Contributions are welcome, you wanna help? Here's how you can contribute, it's great:
+1. Clonez le dépôt :
+   git clone https://github.com/SynthSpecter/calculator-synthwave.git
 
-Crée une branche pour ta fonctionnalité, comme ça : git checkout -b feature/AmazingFeature.
-| Create a branch for your feature, like this: git checkout -b feature/AmazingFeature.
+2. Ouvrez index.html dans votre navigateur préféré (Chrome, Firefox, Safari, etc.).
+   (Aucune dépendance requise ! L'application fonctionne avec du HTML/CSS/JS pur.)
 
-Commit tes modifications, tu peux faire comme ça : git commit -m 'Add some AmazingFeature'.
-| Commit your changes, you can do it like this: git commit -m 'Add some AmazingFeature'.
+### **English**
 
-Push vers la branche, allez : git push origin feature/AmazingFeature.
-| Push to the branch, go on: git push origin feature/AmazingFeature.
+1. Clone the repository :
+   git clone https://github.com/SynthSpecter/calculator-synthwave.git
 
-Ouvre une Pull Request, et c'est parti !
-| Open a Pull Request, and off you go!
+2. Open index.html in your preferred browser (Chrome, Firefox, Safari, etc.).
+   (No dependencies required! The app runs on pure HTML/CSS/JS.)
 
-Contact | Contact
-Pour toute question ou commentaire, n'hésite pas à me contacter à kev.tl63@gmail.com, je suis là !
-| For any questions or comments, feel free to contact me at kev.tl63@gmail.com, I'm here!
+## **🤝 Contribuer / Contribute**
 
-Remerciements | Acknowledgments
-Merci à tous ceux qui ont inspiré ce projet ou contribué de quelque manière que ce soit, vous êtes géniaux !
-| Thanks to everyone who inspired this project or contributed in any way, you're awesome!
+### **Français**
+
+Les contributions sont les bienvenues ! Voici comment faire :
+
+1. Forkez le projet.
+
+2. Créez une branche (git checkout -b ma-fonctionnalite).
+
+3. Commitez vos changements (git commit -m "Ajout de X").
+
+4. Pushez la branche (git push origin ma-fonctionnalite).
+
+5. Ouvrez une Pull Request.
+
+**Idées d’améliorations :**
+
+- Ajouter des opérations avancées (racine carrée, puissance, etc.).
+
+- Ajouter un mode scientifique.
+
+- Ajouter des animations pour les boutons.
+
+- Implémenter un système de thèmes personnalisables.
+
+### **English**
+
+Contributions are welcome! Here’s how:
+
+1. Fork the project.
+
+2. Create a branch (git checkout -b my-feature).
+
+3. Commit your changes (git commit -m "Added X").
+
+4. Push the branch (git push origin my-feature).
+
+5. Open a Pull Request.
+
+**Improvement ideas :**
+
+- Add advanced operations (square root, power, etc.).
+
+- Add a scientific mode.
+
+- Add animations for buttons.
+
+- Implement a customizable theme system.
+
+## **🙏 Remerciements / Acknowledgments**
+
+Merci à tous ceux qui contribueront à ce projet !
+
+/ Thanks to everyone who will contribute to this project!
+Un projet développé avec passion et un peu d’aide synthétique. 😉
+
+/ A project developed with passion and a bit of synthetic help. 😉
